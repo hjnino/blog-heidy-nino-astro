@@ -1,0 +1,42 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑‍🚀 Hola, Astronautas!</h1>
+			<p>
+				Texto de bienvenida para la plantilla de inicio de blog de Astro. Explica que es una plantilla ligera y 
+				minimalista para sitios web personales, blogs o portafolios
+			</p>
+			<p>
+				Incluye instrucciones para editar la página, el encabezado, el pie de página, ver las publicaciones del 
+				blog y personalizar el diseño. También menciona recursos de documentación y un enlace a otra plantilla 
+				de blog.
+			</p>
+			<p>Archivos importantes:</p>
+			<ul>
+				<li>Edita esta página en  <code>src/pages/index.astro</code></li>
+				<li>Edita los elementos del encabezado del sitio en <code>src/components/Header.astro</code></li>
+				<li>Agrega tu nombre al pie de página en  <code>src/components/Footer.astro</code></li>
+				<li>Revisa las publicaciones de blog incluidas en <code>src/content/blog/</code></li>
+				<li>Personaliza el diseño de la página de publicaciones de blog en <code>src/layouts/BlogPost.astro</code></li>
+			</ul>
+			<p>
+				Destaca la capacidad de personalización con integraciones de <a href="https://docs.astro.build/">Astro</a>
+				y proporciona enlaces a la documentación y a un servidor de <a href="https://astro.build/chat">Discord</a>
+				para obtener ayuda. También menciona una plantilla de blog alternativa.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
