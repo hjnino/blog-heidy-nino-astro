@@ -5,6 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	outDir: './docs', 
+	site: 'https://hjnino.github.io/',
+	base: '/blog-heidy-nino-astro',
 	integrations: [mdx(), sitemap()],
 });
