@@ -94,7 +94,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`https://hjnino.github.io/blog-heidy-nino-astro/blog/${post.id}/`}>
-									<img width={720} height={360} src={`https://hjnino.github.io/blog-heidy-nino-astro/${post.data.heroImage}`} alt="" />
+									<img width={720} height={360} src={`https://hjnino.github.io/${post.data.heroImage}`} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
